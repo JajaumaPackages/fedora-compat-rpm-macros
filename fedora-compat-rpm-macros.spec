@@ -2,7 +2,7 @@
 
 Name:           fedora-compat-rpm-macros
 Version:        1.0.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        RPM macros for compatibility with Fedora
 
 License:        MIT
@@ -32,5 +32,8 @@ install -m 644 %{SOURCE0} %{buildroot}/%{__rpmmacrodir}
 
 
 %changelog
+* Sat Apr 07 2018 Jajauma's Packages <jajauma@yandex.ru> - 1.0.0-2
+- Add %%ldconfig_scriptlets
+
 * Thu Sep 07 2017 Jajauma's Packages <jajauma@yandex.ru> - 1.0.0-1
 - Initial release
